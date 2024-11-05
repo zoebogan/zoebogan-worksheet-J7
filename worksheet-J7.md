@@ -16,35 +16,29 @@ Write code that creates a socket connection to ip address 123.45.678.900 at port
 
 7. ```java
    import java.util.*;
-import java.net.*;
-import java.io.*;
+   import java.net.*;
+   import java.io.*;
 
-public class HelloSocket{
-
-    public static void main(String args[]){
-
-        Socket sock=null;        
-        try{
-           sock = new Socket("123.45.678.900",4040);
+   public class HelloSocket{
+      public static void main(String args[]){
+         Socket sock=null;
+         try{
+            sock = new Socket("123.45.678.900",4040);
         }catch(Exception e){
             System.err.println("Cannot Connect");
             System.exit(1);
         }
-
-       
         try{
             PrintWriter pw = new PrintWriter(sock.getOutputStream());
             pw.println("pink");
             pw.flush(); //flush the output (recall PrintWriters buffer)
-
-            
+   
             BufferedReader in =
                 new BufferedReader(
                          new InputStreamReader(sock.getInputStream()));
 
             String reply = in.readLine();//read a line from ther server
             System.out.println("Server said: "+reply);
-
             
             pw.close(); //close the stream
             in.close();//close the input stream
@@ -53,9 +47,8 @@ public class HelloSocket{
             System.err.print("IOException");
             System.exit(1);
         }
-
-    }
-}
+      }
+   }
 ```
 
 8. Input stream reads data from a source using ```readLine()``` and output stream writes data to the destination using ```flush()```. 
