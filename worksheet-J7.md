@@ -10,20 +10,14 @@
 
 5. An IP address is an 4-byte number assigned to devices so that routers can determine where to send a packet next. A domain name is used to identify networked devices, however it uses IP addresses.
 
-How does the operating system use ports?
-
-
+6. Ports allow the operating system to divide up the data arriving from the network based on the destination process. 
 
 Write code that creates a socket connection to ip address 123.45.678.900 at port 4040. Then, print a color to that socket’s output.
 
+7. 
 
+8. Input stream reads data from a source using ```readLine()``` and output stream writes data to the destination using ```flush()```. 
 
-What is the difference between a socket’s input stream and its output stream?
+9. A Socket is used as the client socket in a two way communication with a server. A SocketServer is initialized with the port that is listening for an incoming connect, once that is established a new Socket can be returned to communicate with the client. 
 
-
-
-What is the difference between a Socket and a SocketServer?
-
-
-
-How are threads useful with servers? How does a server manage to always be listening for sockets trying to connect?
+10. Threads are useful to managing multiple programs at the same time. A threaded socket server starts a new thread for each thread so that the main thread can continue to listen to incoming connections.
