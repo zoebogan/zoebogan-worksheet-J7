@@ -12,8 +12,6 @@
 
 6. Ports allow the operating system to divide up the data arriving from the network based on the destination process. 
 
-Write code that creates a socket connection to ip address 123.45.678.900 at port 4040. Then, print a color to that socket’s output.
-
 7. ```java
    import java.util.*;
    import java.net.*;
@@ -48,8 +46,7 @@ Write code that creates a socket connection to ip address 123.45.678.900 at port
             System.exit(1);
         }
       }
-   }
-```
+   } ```
 
 8. Input stream reads data from a source using ```readLine()``` and output stream writes data to the destination using ```flush()```. 
 
