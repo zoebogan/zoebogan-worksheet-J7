@@ -1,4 +1,5 @@
-
+# Questions
+## Zoe Bogan
 1. A packet has a header, which stores the address of a packet, and a payload which stores the data of the packet. 
 
 2. The purpose of an internet layer is to interconnect networks and the way that computers are identified. The client needs to specify the internet protocol address or an ip address. 
@@ -7,9 +8,7 @@
 
 4. SMTP is used to transmit email messages and HTTP is used to download web content. 
 
-What is the difference between an IP address and a domain name?
-
-5. An IP address is an 4-byte number assigned to devices so that routers can determine where to send a packet next. A domain name is used to identify networked devices. 
+5. An IP address is an 4-byte number assigned to devices so that routers can determine where to send a packet next. A domain name is used to identify networked devices, however it uses IP addresses.
 
 How does the operating system use ports?
 
