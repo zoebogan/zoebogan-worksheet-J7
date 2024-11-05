@@ -46,8 +46,8 @@
             System.exit(1);
         }
       }
-   } ```
-
+   }
+   
 8. Input stream reads data from a source using ```readLine()``` and output stream writes data to the destination using ```flush()```. 
 
 9. A Socket is used as the client socket in a two way communication with a server. A SocketServer is initialized with the port that is listening for an incoming connect, once that is established a new Socket can be returned to communicate with the client. 
